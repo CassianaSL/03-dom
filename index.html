@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora officia nesciunt, alias dolorum perferendis, maxime nam asperiores corporis rem eaque excepturi ea incidunt adipisci qui earum voluptatum distinctio, itaque nulla.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, blanditiis est aliquam dolor quos beatae vitae ipsa obcaecati natus labore saepe officiis! Ut sequi optio iure officia saepe eius provident.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et exercitationem voluptatibus deleniti magnam ducimus autem! Distinctio sit dolore, natus optio porro ipsa id corporis neque tenetur ducimus? Ea, consectetur distinctio?
+        </p>
+    </main>
+    <aside>
+        <form>
+            <label>Item:</label>
+            <input type="text" autofocus>
+            <button>Adicionar</button>
+
+        </form>
+
+        <ol>
+            <!--li*3{Item $}-->
+            <!--PARA ENCONTRAR ELEMENTOS NO SITE
+                document.Element retorna a tag em si, .Elements retorna uma lista de todos os elementos para pegar o elemento em si tem que colocar o [indice] independendo que quantos itens tiver na lista
+                Ou utilizar query.Selector, selectorAll retorna a mesma lista que que .Elements, mas o Selector retorna o primeiro que existe
+            -->
+            <!--PARA INSERIR UM PARAGRAFO NOVO
+                main= document.body.children[1]; //<main>​…​</main>​
+                p= document.createElement('p'); //<p>​</p>​
+                p.textContent= 'Um Paragrafo'; //"Um Paragrafo"
+                p //<p>​Um Paragrafo​</p>​
+                main.append(p);
+            -->
+            <li>Item <strong>1</strong>: DBO</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </aside>
+
+    <script src="js.js"> </script>
+
+</body>
+</html>
